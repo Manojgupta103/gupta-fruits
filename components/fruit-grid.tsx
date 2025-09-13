@@ -36,7 +36,7 @@ const fruits = [
   {
     name: "Bananas",
     tagline: "Various Variety Available - Energy Boost",
-    image: "/bunch-of-yellow-bananas-on-white-bacKground.jpg",
+    image: "/bananas.jpg",
     popular: true,
     seasonal: false,
     units: ["Dozen"],
@@ -68,7 +68,7 @@ const fruits = [
   {
     name: "Grapes",
     tagline: "Various Variety Available - Sweet Clusters",
-    image: "/bunch-of-purple-grapes-on-white-bacKground.jpg",
+    image: "/grapes.jpg",
     popular: true,
     seasonal: false,
     units: ["Kg"],
@@ -76,7 +76,7 @@ const fruits = [
   {
     name: "Orange",
     tagline: "Vitamin C Powerhouse Citrus",
-    image: "/fresh-orange-citrus-fruits-on-white-bacKground.jpg",
+    image: "/orange.jpg",
     popular: true,
     seasonal: false,
     units: ["Kg", "Pieces", "Dozen"],
