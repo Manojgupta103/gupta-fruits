@@ -12,19 +12,19 @@ const featuredFruits = [
   {
     name: "Fresh Bananas",
     description: "Perfectly ripe, rich in potassium",
-    image: "/bunch-of-yellow-bananas-on-white-background.jpg",
+    image: "/bananas.jpg",
     popular: false,
   },
   {
     name: "Juicy Oranges",
     description: "Sweet and tangy, vitamin C rich",
-    image: "/fresh-orange-citrus-fruits-on-white-background.jpg",
+    image: "/orange.jpg",
     popular: true,
   },
   {
     name: "Sweet Grapes",
     description: "Seedless varieties, perfect for snacking",
-    image: "/bunch-of-purple-grapes-on-white-background.jpg",
+    image: "/grapes.jpg",
     popular: false,
   },
 ]

@@ -72,7 +72,7 @@ export function HeroSection() {
             <div className="relative bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 lg:p-12">
               <img
                 src="/home.png"
-                alt="Fresh fruit basket with variety of colorful fruits"
+                alt="Fresh fruit with variety of colorful fruits"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
               {/* Floating elements */}
