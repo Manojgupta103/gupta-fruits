@@ -24,7 +24,7 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold">
                 <Link href="/shop" className="flex items-center gap-2">
                   Shop Now
                   <ArrowRight className="h-4 w-4" />

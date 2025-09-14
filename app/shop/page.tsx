@@ -28,6 +28,7 @@ export default function ShopPage() {
               button that appears to send your order via WhatsApp.
             </p>
             <p className="text-sm text-green-600">You can add multiple fruits before placing your order!</p>
+            <p className="text-lg font-bold text-green-800 mt-3">**Currently delivering in Bhandup**</p>
           </div>
         </div>
       </div>

@@ -179,11 +179,14 @@ export function FruitGrid() {
   const hasSelectedItems = selectedItems.length > 0
 
   const handleQuantityChange = (fruitName: string, quantity: string) => {
-    setQuantities((prev) => ({
-      ...prev,
-      [fruitName]: quantity,
-    }))
-  }
+  const cleaned = quantity.replace(/[^0-9.]/g, "")
+  const parts = cleaned.split(".")
+  const numericValue = parts.length > 2 ? parts[0] + "." + parts[1] : cleaned
+  setQuantities((prev) => ({
+    ...prev,
+    [fruitName]: numericValue,
+  }))
+}
 
   const handleUnitChange = (fruitName: string, unit: string) => {
     setSelectedUnits((prev) => ({
@@ -239,15 +242,22 @@ export function FruitGrid() {
 
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <Input
-                        type="number"
-                        placeholder="Qty"
-                        min="0"
-                        step="0.5"
-                        value={quantities[fruit.name] || ""}
-                        onChange={(e) => handleQuantityChange(fruit.name, e.target.value)}
-                        className="flex-1"
-                      />
+                       <Input
+  type="number"
+  placeholder="Qty"
+  value={quantities[fruit.name] || ""}
+  onChange={(e) => handleQuantityChange(fruit.name, e.target.value)}
+  onWheel={(e) => e.currentTarget.blur()} // 👈 disables scroll increment
+  className="flex-1 
+    appearance-none 
+    [&::-webkit-inner-spin-button]:appearance-none 
+    [&::-webkit-outer-spin-button]:appearance-none 
+    [-moz-appearance:textfield]"
+  min="0"
+  step="0.5"
+/>
+
+
                       <Select
                         value={selectedUnits[fruit.name] || fruit.units[0]}
                         onValueChange={(value) => handleUnitChange(fruit.name, value)}
